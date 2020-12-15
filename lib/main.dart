@@ -88,6 +88,7 @@ class _LoginPageState extends State<LoginPage>
                             color: Colors.teal, 
                             textColor: Colors.white,
                             child: Text('Login'),
+                            splashColor: Colors.blue,
                           )
                         ],
                       ),
