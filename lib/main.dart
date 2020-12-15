@@ -70,15 +70,25 @@ class _LoginPageState extends State<LoginPage>
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           TextFormField(
-                            decoration: InputDecoration(hintText: 'Enter Email'),
+                            decoration:
+                                InputDecoration(labelText: 'Enter Email'),
                             keyboardType: TextInputType.emailAddress,
                           ),
                           TextFormField(
                             decoration:
-                                InputDecoration(hintText: 'Enter Password'),
+                                InputDecoration(labelText: 'Enter Password'),
                             keyboardType: TextInputType.text,
                             obscureText: true,
                           ),
+                          Padding(
+                            padding: EdgeInsets.only(top: 20.0),
+                          ),
+                          MaterialButton(
+                            onPressed: () => {},
+                            color: Colors.teal, 
+                            textColor: Colors.white,
+                            child: Text('Login'),
+                          )
                         ],
                       ),
                     ),
